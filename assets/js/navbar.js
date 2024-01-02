@@ -1,3 +1,17 @@
+function changeNavbarBg() {
+  document.getElementById("navbar").classList.remove("bg-transparent");
+  document.getElementById("navbar").classList.add("bg-white");
+  document.getElementById("navbar").classList.add("nav-shadow");
+  document.querySelector(".nav-login").classList.add("color-blue");
+}
+
+function changeNavbarTransparent() {
+  document.getElementById("navbar").classList.remove("bg-white");
+  document.getElementById("navbar").classList.remove("nav-shadow");
+  document.getElementById("navbar").classList.add("bg-transparent");
+  document.querySelector(".nav-login").classList.remove("color-blue");
+}
+
 window.onscroll = () => {
   scrollFunction();
 };
@@ -33,16 +47,3 @@ document.querySelector(".navbar-toggler").addEventListener("click", () => {
   }
 });
 
-function changeNavbarBg() {
-  document.getElementById("navbar").classList.remove("bg-transparent");
-  document.getElementById("navbar").classList.add("bg-white");
-  document.getElementById("navbar").classList.add("nav-shadow");
-  document.querySelector(".nav-login").classList.add("color-blue");
-}
-
-function changeNavbarTransparent() {
-  document.getElementById("navbar").classList.remove("bg-white");
-  document.getElementById("navbar").classList.remove("nav-shadow");
-  document.getElementById("navbar").classList.add("bg-transparent");
-  document.querySelector(".nav-login").classList.remove("color-blue");
-}
