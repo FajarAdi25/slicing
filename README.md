@@ -1,4 +1,4 @@
-# Mama Recipe Portfolio  🍔🍰🍕
+# Mama Recipe Slicing  🍔🍰🍕
 
 ## Project Description 📜
 
