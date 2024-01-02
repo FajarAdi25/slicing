@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/utility.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/video.css" />
+    <script
+      src="https://kit.fontawesome.com/fe1542b102.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Video</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar fixed-top navbar-expand-md navbar-light bg-transparent py-2 py-md-4 ff-airbnb"
+      id="navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand d-md-none" href="/index.html">
+          <img
+            src="./assets/icon/logo-black.svg"
+            width="45px"
+            height="45px"
+            alt="App Icon"
+          />
+          <span>Food Recipe</span>
+        </a>
+        <button
+          class="navbar-toggler collapsed bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item me-5">
+              <a class="nav-link" href="/index.html"
+                ><span class="active">Home</span></a
+              >
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="/add.html"><span>Add Recipe</span></a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="/profile.html"><span>Profile</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div class="container-fluid">
+      <div class="row ff-airbnb">
+        <!-- video -->
+        <section class="col-12 col-lg-9">
+          <div class="row change vh-100">
+            <div class="col-1 back-primary"></div>
+            <div class="col-11 d-flex justify-content-center">
+              <div class="video mx-1 mx-sm-3 mx-md-5">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/YW48gEX8rg4?si=IaeQbeO6txFGNO8j"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <!-- <img
+                  src="./assets/img/video.webp"
+                  alt="Beef Steak with Curry Sauce"
+                /> -->
+                <p class="fs-4 mt-3 mb-1">Beef Steak with Curry Sauce</p>
+                <p class="text-secondary">3 Month Ago</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- other recipe -->
+        <aside class="col-lg-3 d-none d-lg-block">
+          <div class="other">
+            <p class="fs-4">Other Recipe</p>
+            <div class="card my-2 mx-2 border-0">
+              <img
+                src="./assets/img/popular-1.webp"
+                class="card-img-top"
+                alt="Chiken Kare"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none text-dark" href="/detail.html"
+                    >Chiken Kare</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  <a
+                    href="/profile.html"
+                    class="text-secondary text-decoration-none"
+                    >HanaLohana</a
+                  >
+                  - 3 month ago
+                </p>
+              </div>
+            </div>
+            <div class="card my-2 mx-2 border-0">
+              <img
+                src="./assets/img/popular-2.webp"
+                class="card-img-top"
+                alt="Bomb Chicken"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none text-dark" href="/detail.html"
+                    >Bomb Chicken</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  <a
+                    href="/profile.html"
+                    class="text-secondary text-decoration-none"
+                    >HanaLohana</a
+                  >
+                  - 3 month ago
+                </p>
+              </div>
+            </div>
+            <div class="card my-2 mx-2 border-0">
+              <img
+                src="./assets/img/popular-3.webp"
+                class="card-img-top"
+                alt="Banana Smothie Pop"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none text-dark" href="/detail.html"
+                    >Banana Smothie Pop</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  <a
+                    href="/profile.html"
+                    class="text-secondary text-decoration-none"
+                    >HanaLohana</a
+                  >
+                  - 3 month ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script src="./assets/js/navbar.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
