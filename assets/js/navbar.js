@@ -18,18 +18,12 @@ window.onscroll = () => {
 
 // Scroll Handler
 function scrollFunction() {
-  let navbarTogglerStatus = document
-    .querySelector(".navbar-toggler")
-    .classList.contains("collapsed");
-
-  if (navbarTogglerStatus) {
     if (document.documentElement.scrollTop > 100) {
       changeNavbarBg();
     } else {
       changeNavbarTransparent();
     }
   }
-}
 
 // Click Handler
 document.querySelector(".navbar-toggler").addEventListener("click", () => {
